@@ -1,5 +1,4 @@
 site_name: 'OVHcloud #TechRoadShow'
-site_url: https://ovhtechroadshow.github.io/
 nav:
   - 'Introduction':
     - index.md
