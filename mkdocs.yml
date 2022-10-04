@@ -1,0 +1,6 @@
+site_name: 'OVHcloud #TechRoadShow'
+site_url: https://ovhtechroadshow.github.io/
+nav:
+  - Linux, Unix, MacOS: unix.md
+  - Windows: windows.md
+theme: readthedocs
