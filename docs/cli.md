@@ -1,6 +1,6 @@
 # Openstack CLI
 
-!!! info
+!!! note
     Na tym etapie korzystamy z istniejących instancji, żeby ułatwić sobie pracę
 
 1. Instalacja klienta Openstack
