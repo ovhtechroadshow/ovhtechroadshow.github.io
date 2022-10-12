@@ -12,7 +12,7 @@ Lokalizacja, dowolna.
 
 System operacyjny: **Ubuntu 22.04**
 
-Należy wybrać **klucz SSH** który wcześniej dodaliśmy.
+Należy wybrać **klucz SSH**, który wcześniej dodaliśmy.
 
 Konfiguracja instancji: w skrypcie poinstalacyjnym należy podać
 
@@ -72,7 +72,7 @@ Dodatkowy dysk do instancji możemy dodać przez Managera.
 
 W sekcji **Storage** należy wejść w zakładkę **Block storage** i kliknąć na przycisk **Create a volume**
 
-Ze względu na ograniczenia geograficzny należy wybrać tą samą lokalizację jak ta w której znajdują się maszyny wirtualne.
+Ze względu na ograniczenia geograficzne należy wybrać tą samą lokalizację jak ta, w której znajdują się maszyny wirtualne.
 
 Po utworzeniu należy kliknąć na trzy kropki po prawej stronie i wybrać *Attach to instance*
 ![putty](img/attach_volume.png)
@@ -81,7 +81,7 @@ Po podłączeniu należy jeszcze raz wykonać polecenie `lsblk`.
 
 ### Przygotowanie dysku w systemie Linux
 
-Tak dodany dysk jest suroway więc należy na nim utworzyć:
+Tak dodany dysk jest surowy więc należy na nim utworzyć:
 
 * tablicę partycji:
 
@@ -99,6 +99,11 @@ sudo parted -s /dev/sdb mkpart data 0% 100%
 
 ```
 sudo mkfs.ext4 /dev/sdb1
+```
+
+* zamontowanie dysku
+```
+sudo mount /dev/sdb1 /mnt
 ```
 
 ### Sprawdzenie wydajności dysku
