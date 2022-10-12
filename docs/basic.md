@@ -6,21 +6,21 @@ W tej sekcji uruchomimy nową maszynę wirtualną, zalogujemy się na nią i prz
 
 W Managerze w sekcji **Compute** w karcie **Instances** klikamy przycisk *Utwórz instancję*.
 
-W sekcji *wybierz model* wybieramy Discovery **D2-2** - instancja z publicznym IP, 1 CPU i 2GB RAM.
+1. W sekcji *"wybierz model"* wybieramy Discovery **D2-2** - instancja z publicznym IP, 1 CPU i 2GB RAM.
 
-Lokalizacja, dowolna.
+2. Lokalizacja: dowolna.
 
-System operacyjny: **Ubuntu 22.04**
+3. System operacyjny: **Ubuntu 22.04**
 
-Wybieramy **klucz SSH**, który wcześniej dodaliśmy.
+4. Wybieramy **klucz SSH**, który wcześniej dodaliśmy.
 
-Konfiguracja instancji: w skrypcie poinstalacyjnym podajemy
+5. Konfiguracja instancji: w skrypcie poinstalacyjnym podajemy
 
-```
-#include https://get.docker.com/
-```
+    ```
+    #include https://get.docker.com/
+    ```
 
-Rozliczenie: **godzinowe**
+6. Rozliczenie: **godzinowe**
 
 ## 2. Logowanie się do nowo utworzonej maszyny wirtualnej
 
@@ -44,7 +44,7 @@ Rozliczenie: **godzinowe**
     Na pytanie czy na pewno jest to host do którego chcemy się połączyć odpowiadamy *Accept*.
     ![putty](img/putty_3.png)
 
-    Wpisujemy jakiego użytkownika chcemy użyć do logowania. W naszym przykładzie jest to `ubuntu`.
+    Podajemy nazwę użytkownika, któ©ego chcemy użyć do logowania. W naszym przypadku jest to `ubuntu`.
     ![putty](img/putty_4.png)
 
 ## 3. Sprawdzenie parametrów maszyny wirtualnej.  
