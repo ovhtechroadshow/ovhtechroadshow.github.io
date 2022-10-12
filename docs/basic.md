@@ -102,6 +102,7 @@ sudo mkfs.ext4 /dev/sdb1
 ```
 
 * zamontowanie dysku
+
 ```
 sudo mount /dev/sdb1 /mnt
 ```
