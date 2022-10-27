@@ -86,24 +86,24 @@ Tak dodany dysk jest surowy więc tworzymy na nim:
 * tablicę partycji:
 
 ```
-sudo parted -s /dev/sdb mklabel gpt
+sudo parted -s /dev/sdX mklabel gpt
 ```
 
 * partycję:
 
 ```
-sudo parted -s /dev/sdb mkpart data 0% 100%
+sudo parted -s /dev/sdX mkpart data 0% 100%
 ```
 
 * system plików:
 
 ```
-sudo mkfs.ext4 /dev/sdb1
+sudo mkfs.ext4 /dev/sdX1
 ```
 
 * zamontowanie dysku
 ```
-sudo mount /dev/sdb1 /mnt
+sudo mount /dev/sdX1 /mnt
 ```
 
 ### Sprawdzenie wydajności dysku

@@ -25,6 +25,9 @@ cat ~/file.txt
 
 ## 4. Połączenie do bucketu z poziomu klienta
 1. Pobranie i instalacja klienta MinIO: [https://min.io/docs/minio/linux/reference/minio-mc.html#install-mc](https://min.io/docs/minio/linux/reference/minio-mc.html#install-mc)
+1. Utworzenie użytkownika S3 w panelu OVHcloud
+![](img/s3_user.png)
+![](img/s3_user_result.png)
 1. Skonfigurowanie klienta tak, żeby był połączony do naszego Object
    Storage.
    ```code
