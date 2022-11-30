@@ -9,6 +9,10 @@ nav:
     - cli.md
     - swift.md
     - k8s.md
+    - clouddb.md
+    - nasha.md
+    - tools.md
+
 theme:
   name: material
   favicon: img/favicon.ico
